@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="242dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="46dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/lbl_machineID"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/machine_id"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_company" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="83dp"
+        android:layout_height="56dp"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_machineID"
+        app:layout_constraintStart_toEndOf="@+id/txt_machineID"
+        app:layout_constraintTop_toTopOf="@+id/txt_machineID"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txt_machineID"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_machineID"
+        android:inputType="text"
+        android:labelFor="@id/lbl_machineID"
+        android:text=""
+        android:textColorHint="#546E7A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_machineID"
+        app:layout_constraintStart_toEndOf="@+id/lbl_machineID"
+        app:layout_constraintTop_toTopOf="@+id/lbl_machineID"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lbl_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/logo_text"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/lbl_employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/employee"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbl_machineID"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_machineID" />
+
+    <TextView
+        android:id="@+id/txt_employee"
+        android:layout_width="221dp"
+        android:layout_height="27dp"
+        android:text="Unkown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_employee"
+        app:layout_constraintStart_toEndOf="@+id/lbl_machineID"
+        app:layout_constraintTop_toTopOf="@+id/lbl_employee"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lbl_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/amount"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbl_employee"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_employee" />
+
+    <EditText
+        android:id="@+id/num_amount"
+        android:layout_width="214dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/hint_amount"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_employee"
+        app:layout_constraintTop_toBottomOf="@+id/txt_employee" />
+
+    <TextView
+        android:id="@+id/lbl_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lbl_amount"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_amount"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/date_current"
+        android:layout_width="149dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:text="01-01-2024"
+        android:textAlignment="viewStart"
+        android:textColorHint="#546E7A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/num_amount"
+        app:layout_constraintTop_toBottomOf="@+id/num_amount"
+        tools:ignore="LabelFor,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="139dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_datePicker"
+        tools:ignore="VisualLintBounds" />
+
+    <Button
+        android:id="@+id/btn_datePicker"
+        android:layout_width="83dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_pick"
+        app:layout_constraintStart_toStartOf="@+id/btn_clear"
+        app:layout_constraintTop_toBottomOf="@+id/num_amount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

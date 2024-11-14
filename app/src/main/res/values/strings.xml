@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cash777</string>
+    <string name="logo">Logo</string>
+    <string name="machine_id">Machine ID:</string>
+    <string name="clear">Clear</string>
+    <string name="print">Print</string>
+    <string name="enter_machineID">Enter Machine ID</string>
+    <string name="logo_text">----------</string>
+    <string name="employee">Employee:</string>
+    <string name="amount">Amount:</string>
+    <string name="date">Date:</string>
+    <string name="caution_text">Only Valid this date</string>
+    <string name="hint_date">Enter date</string>
+    <string name="hint_amount">Enter Amount</string>
+    <string name="date_pick">Date</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
